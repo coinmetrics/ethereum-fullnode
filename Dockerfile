@@ -9,7 +9,9 @@ RUN set -ex; \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
-RUN git clone -b v2.0.1 --depth 1 https://github.com/paritytech/parity /root/parity
+ARG VERSION
+
+RUN git clone -b v${VERSION} --depth 1 https://github.com/paritytech/parity /root/parity
 RUN set -ex; \
 	cd /root/parity; \
 	cargo build --release --features final
