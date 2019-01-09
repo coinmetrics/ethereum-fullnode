@@ -1,22 +1,22 @@
 # Ethereum Parity docker image
 
-[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-ethereum-parity/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-ethereum-parity)
+This is unofficial Ethereum Parity docker image.
+
+It is being used internally at Coin Metrics, and is published in the hope it will be useful, but without any warranty. No support is available. You are using it at your own risk.
 
 ## Using image
+
+[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-ethereum-parity/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-ethereum-parity)
 
 ```
 docker pull quay.io/coinmetrics/fullnode-ethereum-parity:<version>
 ```
 
-## Support
-
-This image is being used internally at Coin Metrics. No support is available. You are using it at your own risk.
-
 ## Security
 
 This image builds binaries from sources downloaded from https://github.com/paritytech/parity.
 
-Image is built on shared Gitlab CI runners provided by Gitlab.com. [CI logs](https://gitlab.com/coinmetrics/fullnodes/ethereum-parity/pipelines)
+Image is built on Coin Metrics infrastructure. [CI logs](https://gitlab.com/coinmetrics/fullnodes/ethereum-parity/pipelines)
 
 ## License
 
