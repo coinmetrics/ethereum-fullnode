@@ -1,4 +1,4 @@
-FROM rust:stretch as builder
+FROM rust:buster as builder
 
 RUN set -ex; \
 	apt-get update; \
@@ -16,7 +16,7 @@ RUN set -ex; \
 	cd /root/parity; \
 	cargo build --release --features final
 
-FROM debian:stretch
+FROM debian:buster
 
 COPY --from=builder /root/parity/target/release/parity /usr/bin/parity
 
