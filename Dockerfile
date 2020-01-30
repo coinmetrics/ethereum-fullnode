@@ -3,6 +3,7 @@ FROM rust:buster as builder
 RUN set -ex; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
+		clang \
 		cmake \
 		libudev-dev \
 		yasm \
