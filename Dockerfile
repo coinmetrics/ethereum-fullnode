@@ -12,16 +12,16 @@ RUN set -ex; \
 
 ARG VERSION
 
-RUN git clone -b v${VERSION} --depth 1 https://github.com/paritytech/parity /root/parity
+RUN git clone -b v${VERSION} --depth 1 https://github.com/openethereum/openethereum /root/openethereum
 RUN set -ex; \
-	cd /root/parity; \
+	cd /root/openethereum; \
 	cargo build --release --features final
 
 FROM debian:buster
 
-COPY --from=builder /root/parity/target/release/parity /usr/bin/parity
+COPY --from=builder /root/openethereum/target/release/openethereum /usr/bin/openethereum
 
 RUN useradd -m -u 1000 -s /bin/bash runner
 USER runner
 
-ENTRYPOINT ["parity"]
+ENTRYPOINT ["openethereum"]
