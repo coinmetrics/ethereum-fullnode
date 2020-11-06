@@ -6,16 +6,11 @@ It is being used internally at Coin Metrics, and is published in the hope it wil
 
 ## Using image
 
-Starting with 3.0.0, Ethereum Parity became OpenEthereum. For consistency both this git repo and docker repo were renamed to simple "ethereum".
-
 [![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-ethereum/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-ethereum)
 
 ```
 docker pull quay.io/coinmetrics/fullnode-ethereum:<version>
 ```
-
-Old, pre-OpenEthereum docker repository:
-[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-ethereum-parity/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-ethereum-parity)
 
 ## Security
 
