@@ -1,4 +1,4 @@
-FROM rust:1.51.0-buster as builder
+FROM rust:1.58.1-buster as builder
 
 RUN set -ex; \
 	apt-get update; \
